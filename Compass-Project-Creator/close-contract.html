@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compass</title>
+<link rel="shortcut icon" href="../images/compass-favicon.jpg" type="image/png">
+<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/custom.css">
+<link rel="stylesheet" type="text/css" href="../jquery-treeview/jquery.treeview.css" />
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="../jquery-treeview/jquery.treeview.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/scroll-bar.js"></script>
+</head>
+
+
+<body>
+<div class="compass-con">
+	<div class="header">
+		<div class="logo"><img src="../images/logo.jpg" alt="image"></div>
+	</div>
+	<div class="main-nav">
+		<span class="left-nav">
+			<span class="left-nav-menu"><a href="search-contract-blank.html"><span class="glyphicon glyphicon-home"></span></a></span>
+		</span>
+		<span class="right-nav">
+			<span class="right-nav-menu"><span class="text">Logged in as:</span> Creator</span>
+			<span class="right-nav-menu"><a href="../login.html"><span class="text">Logout</span> <span class="glyphicon glyphicon-off log-out"></span></a></span>		</span>
+		<div class="clearfix"></div>
+	</div>
+	<div class="main-page">
+		<div class="left-nav-main1">
+			<ul class="left-nav-menu1">
+					<li><a href="search-contract-blank.html"><span class="glyphicon glyphicon-search"></span> Search Cost Centre</a></li>
+					<li><a href="task-list-blank.html"><span class="glyphicon glyphicon-list-alt"></span> View My Task List</a></li>
+					<li><a href="new-contract.html"><span class="glyphicon glyphicon-duplicate"></span> Create Cost Centre Form</a></li>
+					
+					<li><a href="close-contract-blank.html"><span class="glyphicon glyphicon-floppy-remove"></span> Close Cost Centre Form</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-gift"></span> Master View</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> User Management</a></li>
+					<li><a href="hierarchy.html"><span class="glyphicon glyphicon-equalizer"></span> Search Hierarchy</a></li>
+			</ul>
+		</div>
+		<div class="main-con">
+			<div class="main-con-contract-left">
+				<div class="heading1"><h3>Search Cost Centre</h3></div>
+				<div class="contract-tab-item-area">
+					<span class="item active" id="contract-menu">Cost Centre</span>
+				</div>
+				<div class="contract-tab-item-area-box-main">
+					<div class="contract-tab-item-area-box" id="contract">
+					<div class="search-bx">
+						<input type="text" class="form-control" placeholder="Search...">
+						<button class="search-btn"><span class="glyphicon glyphicon-search"></span></button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="search-lst-table">
+						<table>
+							<thead>
+								<tr><th>Cost Centre</th><th>Description</th><th>Parent</th><th style="width: 60px;">Action</th></tr>
+							</thead>	
+							<tbody>
+								<tr><td>010301</td><td>RMD - APAC</td><td>APATOT</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>01030100</td><td>RMD - APAC - Balance Sheet</td><td>010301</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>01030190</td><td>RMD - APAC - Operational Admin</td><td>010301</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>010302</td><td>RMD - APAC</td><td>APATOT</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>01030200</td><td>RMD - APAC - Balance Sheet</td><td>010302</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>01030290</td><td>RMD - APAC - Operational Admin</td><td>010302</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>010302</td><td>RMD - APAC</td><td>APATOT</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>01030200</td><td>RMD - APAC - Balance Sheet</td><td>010302</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr><td>01030290</td><td>RMD - APAC - Operational Admin</td><td>010302</td><td><a href="close-contract.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+					
+					
+				
+					
+				
+				</div>
+			</div>
+			<div class="main-con-contract-right">
+				<div class="search-bar-btn"><span class="glyphicon glyphicon-chevron-left"></span></div>
+				<div class="heading1"><h3>Close Cost Centre</h3>
+					<span class="button-area"><button class="main-button"><span class="glyphicon glyphicon-check"></span> Submit</button></span>
+				</div>
+				<div class="clearfix"></div>
+				<div class="contract-tabber">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#CLOSURE" aria-controls="home" role="tab" data-toggle="tab">CLOSURE</a></li>
+						<li role="presentation"><a href="#FINALISE" aria-controls="profile" role="tab" data-toggle="tab">FINALISE</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="CLOSURE">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Cost Centre End Date</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control calander-view"></div>
+									<div class="col-sm-3"><label class="frm-label">Profit In This Year (ITY PBIT)</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Reason for Closure</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+									<div class="col-sm-3"><label class="frm-label">Fixed Assets Disposed</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Person Closing Site</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+									<div class="col-sm-3"><label class="frm-label">Fixed Assets Transferred</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Contact No. - Person Closing Site</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+									<div class="col-sm-3"><label class="frm-label">Fixed Assets Transferred to</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Site Computer Serial Numbers</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+									<div class="col-sm-3"><label class="frm-label">Motor Vehicles Transferred or Returned</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Sales In This Year (ITY)</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+									<div class="col-sm-3"><label class="frm-label">Motor Vehicles Transferred or Returned to</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Annual Rate of Sales (ARO)</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+									<div class="col-sm-3"><label class="frm-label">Computer Equipment Transferred or Returned</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Annual Rate of Profit (ARO PBIT)</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+									<div class="col-sm-3"><label class="frm-label">Computer Equipment Transferred or Returned to</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+							</div>
+							<div class="row">
+									<h3 class="form-heading">Cancellation of the following required (select if required)?</h3>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Paperless AP Queues (allow 3 months)</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Nestle Leases</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">AP Positing in Oracle (allow 3 months)</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Telephone / Fax</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">GL Positing in Oracle except AP (allow 3 months)</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Site Email Address</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Promotional Panels</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Bank guarantee / performance bond</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Taste Life</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Deposit i.e. electricity / water to be recovered</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">ADSL / Bigpond</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Deposit book</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">PAP Login</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Eftpos</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">MyCompass Login</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Amex / Diners</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Iproc Login</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+									<div class="col-sm-3"><label class="frm-label">Automatic payments</label></div>
+									<div class="col-sm-3"><input type="checkbox" value=""></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Mobile cancel / transfer</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+									<div class="col-sm-3"><label class="frm-label">Management Reporting Region (NZ Only)</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Float banked?</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+									<div class="col-sm-3"><label class="frm-label">Who we lost the contract to</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">When was the float banked?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control calander-view"></div>
+									<div class="col-sm-3"><label class="frm-label">Type of Loss</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">What was the value of the float banked?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control"></div>
+									<div class="col-sm-3"><label class="frm-label">Supplier Notifications Sent</label></div>
+									<div class="col-sm-3"><select class="form-control"></select></div>
+							</div>
+							
+							
+							
+							
+							
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="FINALISE">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Comments / Other Details</label></div>
+									<div class="col-sm-6"><textarea class="form-control" style="height:80px !important">Please Comment Here...</textarea></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Attachments (I.e. Cost Centre) URL</label></div>
+									<div class="col-sm-6"><input type="text" class="form-control" value="XYZ"></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Submitted By</label></div>
+									<div class="col-sm-3"><div type="text" class="disb-dv" value="XYZ">XYZ</div></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Email Address of Submitter</label></div>
+									<div class="col-sm-3"><div type="text" class="disb-dv" value="XYZ">XYZ</div></div>
+							</div>
+							<div class="row">
+									<a href="#" class="form-link1">View History</a>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Status</label></div>
+									<div class="col-sm-3"><div type="text" class="disb-dv" value="Approved">Approved</div></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Comment</label></div>
+									<div class="col-sm-6"><div class="disb-dv" style="height:80px !important">No Data Found...</div></div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+	
+				
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

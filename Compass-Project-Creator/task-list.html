@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compass</title>
+<link rel="shortcut icon" href="../images/compass-favicon.jpg" type="image/png">
+<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/custom.css">
+<link rel="stylesheet" type="text/css" href="../jquery-treeview/jquery.treeview.css" />
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="../jquery-treeview/jquery.treeview.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/scroll-bar.js"></script>
+</head>
+
+<body>
+<div class="compass-con">
+	<div class="header">
+		<div class="logo"><img src="../images/logo.jpg" alt="image"></div>
+	</div>
+	<div class="main-nav">
+		<span class="left-nav">
+			<span class="left-nav-menu"><a href="search-contract-blank.html"><span class="glyphicon glyphicon-home"></span></a></span>
+		</span>
+		<span class="right-nav">
+			<span class="right-nav-menu"><span class="text">Logged in as:</span> Creator</span>
+			<span class="right-nav-menu"><a href="../login.html"><span class="text">Logout</span> <span class="glyphicon glyphicon-off log-out"></span></a></span>		</span>
+		<div class="clearfix"></div>
+	</div>
+	<div class="main-page">
+		<div class="left-nav-main1">
+			<ul class="left-nav-menu1">
+					<li><a href="search-contract-blank.html"><span class="glyphicon glyphicon-search"></span> Search Cost Centre</a></li>
+					<li><a href="task-list-blank.html"><span class="glyphicon glyphicon-list-alt"></span> View My Task List</a></li>
+					<li><a href="new-contract.html"><span class="glyphicon glyphicon-duplicate"></span> Create Cost Centre Form</a></li>
+					
+					<li><a href="close-contract-blank.html"><span class="glyphicon glyphicon-floppy-remove"></span> Close Cost Centre Form</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-gift"></span> Master View</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> User Management</a></li>
+					<li><a href="hierarchy.html"><span class="glyphicon glyphicon-equalizer"></span> Search Hierarchy</a></li>
+			</ul>
+		</div>
+		<div class="main-con">
+			<div class="main-con-contract-left">
+				<div class="heading1">
+					<h3>My Tasklist</h3>
+				</div>
+				<div class="contract-tab-item-area">
+					<span class="item active" id="contract-menu">Cost Centre</span>
+				</div>
+				<div class="contract-tab-item-area-box-main">
+					<div class="contract-tab-item-area-box" id="contract">
+					<div class="search-bx">
+						<input type="text" class="form-control" placeholder="Search...">
+						<button class="search-btn"><span class="glyphicon glyphicon-search"></span></button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="search-lst-table">
+						<table>
+							<thead>
+								<tr><th>Cost Centre Name</th><th>Status</th><th>Go</th></tr>
+							</thead>	
+							<tbody>
+								<tr class="assigned-clr"><td>010301-RMD - APAC</td><td>Reassigned</td><td><a href="task-list.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr class="assigned-clr"><td>010302-RMD - APAC</td><td>Reassigned</td><td><a href="task-list.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+								<tr class="assigned-clr"><td>010303-RMD - APAC</td><td>Reassigned</td><td><a href="task-list.html"><span class="glyphicon glyphicon glyphicon-circle-arrow-right view-contract" title="View Cost Centre"></span></a></td></tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="main-con-contract-right">
+				<div class="search-bar-btn"><span class="glyphicon glyphicon-chevron-left"></span></div>
+				<div class="heading1">
+					<h3>Cost Centre</h3>
+						<span class="button-area"><button class="main-button" id="edit-contract1"><span class="glyphicon glyphicon-edit"></span> Edit</button><button class="main-button hide1" id="edit-contract1save"><span class="glyphicon glyphicon-check"></span> Submit</button></span>
+				</div>
+				<div class="clearfix"></div>
+									<div class="contract-tabber">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#CostCentre" aria-controls="home" role="tab" data-toggle="tab">COST CENTRE</a></li>
+						<li role="presentation"><a href="#CONTRACT" aria-controls="profile" role="tab" data-toggle="tab">CONTRACT</a></li>
+						<li role="presentation"><a href="#CLIENTDETAIL" aria-controls="messages" role="tab" data-toggle="tab">CLIENT DETAIL</a></li>
+						<li role="presentation"><a href="#OPERATIONALSETUP" aria-controls="settings" role="tab" data-toggle="tab">OPERATIONAL SETUP</a></li>
+						<li role="presentation"><a href="#MANAGEMENT" aria-controls="profile" role="tab" data-toggle="tab">MANAGEMENT</a></li>
+						<li role="presentation"><a href="#ISTSETUP" aria-controls="messages" role="tab" data-toggle="tab">IS&T SETUP</a></li>
+						<li role="presentation"><a href="#BILLINGAP" aria-controls="settings" role="tab" data-toggle="tab">BILLING/AP</a></li>
+						<li role="presentation"><a href="#PAYROLL" aria-controls="profile" role="tab" data-toggle="tab">PAYROLL</a></li>
+						<li role="presentation"><a href="#LOCATION" aria-controls="messages" role="tab" data-toggle="tab">LOCATION</a></li>
+						<li role="presentation"><a href="#FINALISE" aria-controls="settings" role="tab" data-toggle="tab">FINALISE</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content" id="edit-tab-content1">
+						<div role="tabpanel" class="tab-pane active" id="CostCentre">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Cost Centre Name<span class="hide1 required-field">*</span></label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="01030100" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Business Subsector</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">	
+									<div class="col-sm-3"><label class="frm-label">Cost Centre</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Services Description</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">	
+									<div class="col-sm-3"><label class="frm-label">Parent of Cost Centre</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">State/Region</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Service Type</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-1"><span class="glyphicon glyphicon-plus-sign add-btn hide1"></span></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-9 col-sm-offset-3 service-table">
+										<table>
+											<thead><tr><th>Code</th><th>Description</th><th class="hide1">Action</th></tr></thead>
+											<tbody>
+												<tr><td>01030190</td><td>RMD - APAC - Operational Admin</td><td class="hide1"><span class="close-btn glyphicon glyphicon-remove"></span></td></tr>
+												<tr><td>01030191</td><td>RMD - APAC - Balancesheet</td><td class="hide1"><span class="close-btn glyphicon glyphicon-remove"></span></td></tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Commencement Date</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Mandays</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Site Population</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Cost Centre Length</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Company</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Status</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Employement Entity</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Brand</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Is this a new Cost Centre or Sub Cost Centre</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Commodity</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Specify existing Cost Centre Site code number range</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Classification</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Department</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Business Sector</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="CONTRACT">
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Local Cost Centre Number</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Term of Notice Days - Client</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Cost Centre Type</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Term of Notice Days - Compass</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Addendum 1 Date</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control calander-view" value="02/05/2017" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Cost Centre Review Date</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control calander-view" value="02/05/2017" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Addendum 2 Date</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control calander-view" value="02/05/2017" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Cost Centre Risk Rating</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Addendum 3 Date</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control calander-view" value="02/05/2017" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">ARO Cost Centre Revenue</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Cost Centre End Date</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control calander-view" value="02/05/2017" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Unit Profit ARO</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">No Cost Centre End Date</label></div>
+									<div class="col-sm-3"><input type="checkbox"></div>
+									<div class="col-sm-3"><label class="frm-label">CAPEX Spend</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Account Currency</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Life of Cost Centre Revenue</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Number of Client Employees at Site</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="CLIENTDETAIL">
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client / Parent Company</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Client Street 1</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client Representative Name</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Client Street 2</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client Representative Position</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Client Suburb</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client Phone</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Client State</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client Mobile</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Client Post Code</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client Email</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Client Country</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client Other Contact</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+								</div>	
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="OPERATIONALSETUP">
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Public / Private</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Fixed Rent</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Supplier Region</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Variable Rent</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Client Price Increase</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Frequency of Client Price Increase</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Vending Rights</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+								</div>
+								<div class="row">
+									<h3 class="form-heading">Are the following required?</h3>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Deposit Book</label></div>
+									<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio1" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio1">No</label></div>
+									<div class="col-sm-3"><label class="frm-label">EFTPOS</label></div>
+									<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio2" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio2">No</label></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3"><label class="frm-label">AMEX/ Diners</label></div>
+									<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio3" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio3">No</label></div>
+									<div class="col-sm-3"><label class="frm-label">PAP Queue Required</label></div>
+									<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio4" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio4">No</label></div>
+								</div>
+						</div>
+								
+						<div role="tabpanel" class="tab-pane" id="MANAGEMENT">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Executive Director</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Area Manager</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">General / Regional Manager</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Unit Manager</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Operations Manager</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="ISTSETUP">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">CAPEX form submitted for computer equipment?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Are there any other software requirements?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Is there a PSTN line available?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">If there is a PSTN line available, what is the number?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">If there is no PSTN is a PABX analogue line available?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<h3 class="form-heading">Access required to?</h3>
+								</div>
+							<div class="row">
+								<div class="col-sm-3"><label class="frm-label">POS Solution</label></div>
+								<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio5" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio5">No</label></div>
+								<div class="col-sm-3"><label class="frm-label">ESMS</label></div>
+								<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio6" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio6">No</label></div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3"><label class="frm-label">Compass Procure</label></div>
+								<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio7" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio7">No</label></div>
+								<div class="col-sm-3"><label class="frm-label">Paperless Ap</label></div>
+								<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio8" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio8">No</label></div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3"><label class="frm-label">Pay Global</label></div>
+								<div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio9" checked>Yes</label><label class="radio-inline"><input type="radio" name="optradio9">No</label></div>
+							</div>
+							
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="BILLINGAP">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Credit Aplication Completed</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Customer Class</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Credit Limit</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Profile Class</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Customer Name</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Statement Cycle</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Customer ABN Number</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Payment Terms</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Customer Bill to Address</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">If other payment terms, specify</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Customer Ship to Address</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Price List Default</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Customer Contact Name</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">AP Contact Name</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Customer Contact Phone</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">AP Contact Phone</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Customer Contact Email</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">AP Contact Email</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Primary Status</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="PAYROLL">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Award Type</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Pays processed from Site Number</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Award Description</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Area Manager Email Address</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Is the award alraedy being used by another site?</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Regional Manager Email Address</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="LOCATION">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Location Code</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Location Description</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Location Parent</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+									<div class="col-sm-3"><label class="frm-label">Location Status</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<h3 class="form-heading">Physical Information</h3>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Physical Instructions</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Physical Suburb</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Physical Phone</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Physical State</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Physical Mobile</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Physical Region</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Physical Fax</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Physical Post Code</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Physical Email</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Physical Country</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Physical Street Name 1</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Physical Street Name 2</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row hide1">
+									<a href="#" class="form-link1">Copy Physical Information to all Location</a>
+							</div>
+							<div class="row">
+									<h3 class="form-heading">Postal Information</h3>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Postal Instructions</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Postal Suburb</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Postal Phone</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Postal State</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Postal Mobile</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Postal Region</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Postal Fax</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Postal Post Code</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Postal Email</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Postal Country</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Postal Street Name 1</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Postal Street Name 2</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>							
+							<div class="row">
+									<h3 class="form-heading">Delivery Information</h3>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Delivery Instructions</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Delivery Suburb</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Delivery Phone</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Delivery State</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Delivery Mobile</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Delivery Region</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Delivery Fax</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Delivery Post Code</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Delivery Email</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Delivery Country</label></div>
+									<div class="col-sm-3"><select class="form-control" disabled><option>XYZ</option></select></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Delivery Street Name 1</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+									<div class="col-sm-3"><label class="frm-label">Delivery Street Name 2</label></div>
+									<div class="col-sm-3"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>							
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="FINALISE">
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Comments / Other Details</label></div>
+									<div class="col-sm-6"><textarea class="form-control" style="height:80px !important" disabled>Please Comment Here...</textarea></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Attachments (I.e. Cost Centre) URL</label></div>
+									<div class="col-sm-6"><input type="text" class="form-control" value="XYZ" disabled></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Submitted By</label></div>
+									<div class="col-sm-3"><div type="text" class="disb-dv" value="XYZ" >XYZ</div></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Email Address of Submitter</label></div>
+									<div class="col-sm-3"><div type="text" class="disb-dv" value="XYZ" >XYZ</div></div>
+							</div>
+							<div class="row">
+									<a href="#" class="form-link1">View History</a>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Status</label></div>
+									<div class="col-sm-3"><div type="text" class="disb-dv" value="Approved">Approved</div></div>
+							</div>
+							<div class="row">
+									<div class="col-sm-3"><label class="frm-label">Comment</label></div>
+									<div class="col-sm-6"><div class="disb-dv" style="height:80px !important">No Data Found...</div></div>
+							</div>
+							
+						</div>						
+					</div>
+				
+				</div>
+	
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

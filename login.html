@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compass</title>
+  <link rel="shortcut icon" href="images/compass-favicon.jpg" type="image/png">
+  
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/login.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="login-con">
+		<div class="login-box">
+			<div class="login-logo"><img src="images/logo.jpg" /></div>
+			<div class="row">
+				<div class="col-sm-12"><input type="text" class="form-control" id="username" placeholder="Username"></div>		
+			</div>
+			<div class="row">
+				<div class="col-sm-12"><input type="password" class="form-control" id="password" placeholder="Password"></div>		
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<input type="submit" class="btn btn-primary" value="Login" id="login">		
+				</div>	
+			</div>
+		</div>
+		
+		
+	</div>
+
+<script>
+	$(document).ready(function(){
+		$("#login").click(function(){
+			var uname = $("#username").val();
+			var pass  = $("#password").val();
+			if( uname == "" && pass == "")
+			{
+			alert("Please enter username and password");
+			}
+			if( uname == "admin")
+			{
+			window.open("Compass-Project-Admin/new-contract.html", "_self");
+			}
+			if( uname == "creator")
+			{
+			window.open("Compass-Project-Creator/search-contract-blank.html", "_self");
+			}
+			if( uname == "approver")
+			{
+			window.open("Compass-Project-Approver/search-contract-blank.html", "_self");
+			}
+		
+		
+		});
+	});
+</script>	
+</body>
+</html>
