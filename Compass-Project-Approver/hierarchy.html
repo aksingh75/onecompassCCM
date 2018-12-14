@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compass</title>
+<link rel="shortcut icon" href="../images/compass-favicon.jpg" type="image/png">
+<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/custom.css">
+<link rel="stylesheet" type="text/css" href="../jquery-treeview/jquery.treeview.css" />
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="../jquery-treeview/jquery.treeview.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/scroll-bar.js"></script>
+</head>
+
+
+<body>
+<div class="compass-con">
+	<div class="header">
+		<div class="logo"><img src="../images/logo.jpg" alt="image"></div>
+	</div>
+	<div class="main-nav">
+		<span class="left-nav">
+			<span class="left-nav-menu"><a href="search-contract-blank.html"><span class="glyphicon glyphicon-home"></span></a></span>
+		</span>
+		<span class="right-nav">
+			<span class="right-nav-menu"><span class="text">Logged in as:</span> Creator</span>
+			<span class="right-nav-menu"><a href="../login.html"><span class="text">Logout</span> <span class="glyphicon glyphicon-off log-out"></span></a></span>		</span>
+		<div class="clearfix"></div>
+	</div>
+	<div class="main-page">
+		<div class="left-nav-main1">
+			<ul class="left-nav-menu1">
+					<li><a href="search-contract-blank.html"><span class="glyphicon glyphicon-search"></span> Search Cost Centre</a></li>
+					<li><a href="task-list-blank.html"><span class="glyphicon glyphicon-list-alt"></span> View My Task List</a></li>
+					<li><a href="new-contract.html"><span class="glyphicon glyphicon-duplicate"></span> Create Cost Centre Form</a></li>
+					
+					<li><a href="close-contract-blank.html"><span class="glyphicon glyphicon-floppy-remove"></span> Close Cost Centre Form</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-gift"></span> Master View</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> User Management</a></li>
+					<li><a href="hierarchy.html"><span class="glyphicon glyphicon-equalizer"></span> Search Hierarchy</a></li>
+			</ul>
+		</div>
+		<div class="main-con">
+			<div class="main-con-hierarchy-left">
+				<div class="heading1"><h3>Search Hierarchy</h3></div>
+				<div class="contract-tab-item-area-box-main">
+					<div class="contract-tab-item-area-box" id="draft-contract">
+					<div class="search-bx">
+						<input type="text" class="form-control" placeholder="Search...">
+						<button class="search-btn"><span class="glyphicon glyphicon-search"></span></button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="search-lst-bx">
+						<div class="search-lst-bx-head">
+							<span class="ttl" style="width: 33px;">&ensp;</span>
+							<span class="ttl" style="width: 97px;">Name</span>
+							<span class="ttl" style="width: 155px;">Description</span>
+							<span class="ttl" style="width: 30px;border-right: none;">Go</span>
+						</div>
+						<ul id="tree-hierarchy">
+							<li>Client
+								<ul>
+									<li><span class="grp-icon"></span> <span class="cont-nme">204851</span> <span class="cont-desc">Pioneer Workforce Village</span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon1"></span> <span class="cont-nme">20485100</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485111</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485121</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485131</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485141</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485151</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485191</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+								</ul>
+							</li>
+							<li>COMAUC
+								<ul>
+									<li><span class="grp-icon"></span> <span class="cont-nme">204851</span> <span class="cont-desc">Pioneer Workforce Village</span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon1"></span> <span class="cont-nme">20485100</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485111</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485121</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485131</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485141</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485151</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485191</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+								</ul>
+							</li>
+							<li>COMAUE
+								<ul>
+									<li><span class="grp-icon"></span> <span class="cont-nme">204851</span> <span class="cont-desc">Pioneer Workforce Village</span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon1"></span> <span class="cont-nme">20485100</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485111</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485121</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485131</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485141</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485151</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+									<li><span class="grp-icon"></span> <span class="cont-nme">20485191</span> <span class="cont-desc"></span> <span class="glyphicon glyphicon glyphicon-circle-arrow-right" title="View Hierarchy"></span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					</div>
+				
+					
+				
+				</div>
+			</div>
+		<div class="main-con-hierarchy-mn-right">	
+			<div class="search-bar-hierarchy"><span class="glyphicon glyphicon-chevron-left"></span></div>
+			<div class="main-con-hierarchy-middle">
+				<div class="heading1"><h3>Hierarchy Details</h3></div>
+				<div class="search-bx">
+						<input type="text" class="form-control" placeholder="Search...">
+						<button class="search-btn"><span class="glyphicon glyphicon-search"></span></button>
+						<div class="clearfix"></div>
+				</div>
+				<div class="search-hierarchy-main-bx">
+					<div class="hierarchy-header"><span class="h-ttl">Name</span><span class="h-ttl">Discription</span></div>
+					<ul id="tree-hierarchy-main">
+						<li><span class="grp-icon"></span> COMAUC <span class="hierch-disc"></span>
+							<ul>
+								<li><span class="grp-icon"></span> CONABV <span class="hierch-disc">Contract Type - Total Above Unit</span>
+									<ul><li> </li></ul>
+								</li>
+								<li><span class="grp-icon"></span> CONUNP <span class="hierch-disc">Contract Type - Total Unit</span>
+									<ul>
+										<li><span class="grp-icon"></span> CONFPR <span class="hierch-disc">Fixed Price</span></li>
+										<li><span class="grp-icon"></span> CONMGT <span class="hierch-disc">Management Fee</span></li>
+										<li><span class="grp-icon"></span> CONPLS <span class="hierch-disc">Profit & Loss</span>
+											<ul>
+												<li><span class="grp-icon"></span> P29000 <span class="hierch-disc">Profit & Loss - Education</span></li>
+												<li><span class="grp-icon"></span> PTOBIR <span class="hierch-disc">Profit & Loss - Total B&I and RA</span></li>
+												<li><span class="grp-icon"></span> PTODOR <span class="hierch-disc">Profit & Loss - Total Defence, Offshore and Remote</span>
+													<ul>
+														<li><span class="grp-icon"></span> P51100 <span class="hierch-disc">Profit & Loss - Defence</span></li>
+														<li><span class="grp-icon"></span> P53800 <span class="hierch-disc">Profit & Loss - FM</span></li>
+														<li><span class="grp-icon"></span> PTOOFF <span class="hierch-disc">Profit & Loss - Total Offshore</span></li>
+														<li><span class="grp-icon"></span> PTOREM <span class="hierch-disc">Profit & Loss - Total Remote</span>
+															<ul>
+																<li><span class="grp-icon"></span> P53810 <span class="hierch-disc">Profit & Loss - Construction</span></li>
+																<li><span class="grp-icon"></span> P53820 <span class="hierch-disc">Profit & Loss - Production</span></li>
+																<li><span class="grp-icon"></span> P53830 <span class="hierch-disc">Profit & Loss - Owned / Leased Villages</span>
+																	<ul>
+																		<li><span class="grp-icon"></span> PCOMMU <span class="hierch-disc">Profit & Loss - Owned / Leased Villages Multi</span>
+																			<ul>
+																				<li><span class="grp-icon"></span> 204851 <span class="hierch-disc">Pioneer Workforce Village</span>
+																					<ul>
+																						<li><span class="grp-icon"></span> 20485111 <span class="hierch-disc">Pioneer Workforce Village - Catering</span></li>
+																						<li><span class="grp-icon"></span> 20485121 <span class="hierch-disc">Pioneer Workforce Village - Cleaning</span></li>
+																						<li><span class="grp-icon"></span> 20485131 <span class="hierch-disc">Pioneer Workforce Village - Retail 1</span></li>
+																						<li><span class="grp-icon"></span> 20485141 <span class="hierch-disc">Pioneer Workforce Village - Bar / Tavern1</span></li>
+																						<li><span class="grp-icon"></span> 20485151 <span class="hierch-disc">Pioneer Workforce Village - Property Management</span></li>
+																						<li><span class="grp-icon"></span> 20485191 <span class="hierch-disc">Pioneer Workforce Village - Cost Reimbursable (Backcharge)</span></li>
+																						<li><span class="grp-icon1"></span> 20485100 <span class="hierch-disc">Pioneer Workforce Village - Balance Sheet</span></li>
+																					</ul>
+																				</li>
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
+																<li><span class="grp-icon"></span> P53900 <span class="hierch-disc">Profit & Loss - Remote Other</span></li>
+															</ul>
+														</li>
+														<li><span class="grp-icon"></span> PTOHAC <span class="hierch-disc">Profit & Loss - Total Health and Aged Care</span></li>
+														<li><span class="grp-icon"></span> PTOSLE <span class="hierch-disc">Profit & Loss - Total Sports and Leisure</span></li>
+													</ul>
+												</li>
+												<li><span class="grp-icon"></span> CONUNA <span class="hierch-disc">Total Unallocated</span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			
+			</div>
+			
+			<div class="main-con-hierarchy-right">
+				<div class="heading1"><h3>Properties</h3></div>
+				<div class="property-name"><span class="grp-icon"></span> 01030100</div>
+				<div class="property-box">
+					<div class="search-lst-table hierarchy-bxx">
+						<table>
+							<thead>
+								<tr><th>Label</th><th>Value</th><th>Status</th></tr>
+							</thead>	
+							<tbody>
+								<tr><td>Billing_Email</td><td>Australia</td><td></td></tr>
+								<tr><td>Billing_Phone</td><td> </td><td></td></tr>
+								<tr><td>Billing_Region</td><td>3205</td><td></td></tr>
+								<tr><td>Billing_State</td><td>VIC</td><td></td></tr>
+								<tr><td>Billing_Street Name 1</td><td> </td><td></td></tr>
+								<tr><td>Business_SubSector</td><td> </td><td></td></tr>
+								<tr><td>Billing_Phone</td><td>Compass</td><td></td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
